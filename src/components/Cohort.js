@@ -9,8 +9,8 @@ class Cohort extends Component {
     this.state = {}
   }
 
-  mappedPeople = () => {
-    return this.props.staff.map(person => {
+  mappedPeople = (type) => {
+    return this.props[type].map(person => {
       return (<Person person={person}/>)
     })
   }
@@ -18,7 +18,8 @@ class Cohort extends Component {
   render() {
   return (
     <section className="cohort-container">
-      {this.mappedPeople()}
+      {this.mappedPeople('staff')}
+      {this.mappedPeople('students')}
     </section>
   )
   }
