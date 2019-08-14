@@ -12,7 +12,7 @@ class Person extends Component {
     const {photo, name, quote, superlative} = this.props.person
     return (
     <article>
-      <img alt="yearbook photo" className="person-photo" src={photo}/> 
+      <img alt="yearbook" className="person-photo" src={photo}/> 
       <h3> {name} </h3>
       <p> {quote} </p>
       <h4> {superlative} </h4>
