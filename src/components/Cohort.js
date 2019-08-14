@@ -11,7 +11,7 @@ class Cohort extends Component {
 
   mappedPeople = (type) => {
     return this.props[type].map(person => {
-      return (<Person person={person}/>)
+      return (<Person person={person} deletePerson={this.props.deletePerson}/>)
     })
   }
 
