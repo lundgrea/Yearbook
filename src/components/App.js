@@ -14,8 +14,7 @@ class App extends Component {
   }
 
   addNewPerson = (newPerson) => {
-    console.log(newPerson)
-    this.setState({staff: [...this.state.staff, newPerson]})
+    this.setState({students: [...this.state.students, newPerson]})
   }
 
   render() {

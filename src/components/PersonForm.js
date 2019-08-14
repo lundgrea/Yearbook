@@ -24,6 +24,7 @@ class PersonForm extends Component {
   render() {
     return (
       <form>
+      <h3> Add New Student To The Yearbook</h3>
         <input
           type="text"
           placeholder="Name"
