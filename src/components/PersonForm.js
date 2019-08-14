@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class PersonForm extends Component {
   constructor(props) {
@@ -53,3 +54,7 @@ class PersonForm extends Component {
 }
 
 export default PersonForm
+
+PersonForm.propTypes = {
+addNewPerson: PropTypes.func
+}
