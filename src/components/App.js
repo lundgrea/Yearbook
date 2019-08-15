@@ -18,11 +18,15 @@ class App extends Component {
   }
 
   deletePerson = (id) => {
-    console.log('inside the delete method')
     const filteredStaff = this.state.staff.filter(person => person.id !== id)
     this.setState({ staff: filteredStaff})
     const filteredStudents = this.state.students.filter(student => student.id !== id)
     this.setState({ students: filteredStudents})
+  }
+
+  updatePerson = (event) => {
+    console.log('in the update method')
+    this.setState({[event.target.name]: event.target.value})
   }
 
   render() {
@@ -32,8 +36,8 @@ class App extends Component {
           <h1>Turing Yearbook</h1>
         </header>
         <PersonForm addNewPerson={this.addNewPerson}/>
-        <Cohort title="Staff" data={this.state.staff} deletePerson={this.deletePerson} />
-        <Cohort title="Students" data={this.state.students} deletePerson={this.deletePerson}/>
+        <Cohort title="Staff" data={this.state.staff} deletePerson={this.deletePerson} updatePerson={this.updatePerson} />
+        <Cohort title="Students" data={this.state.students} deletePerson={this.deletePerson} updatePerson={this.updatePerson}/>
       </main>
     );
   }

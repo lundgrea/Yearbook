@@ -15,9 +15,9 @@ const people = {
     {id: 13, name: 'Jeff', quote: '::thoughtful nonsense::', superlative: 'Most Likely to Tell a Dad Joke', photo: 'https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg'},
   ],
   students: [
-    {id: 21, name: 'Abigail', quote: '', superlative: '', photo: 'https://placekitten.com/200/300'},
-    {id: 22, name: 'Brian', quote: '', superlative: '', photo: 'https://placekitten.com/200/300'},
-    {id: 23, name: 'Charlotte', quote: '', superlative: '', photo: 'https://placekitten.com/200/300'},
+    {id: 21, name: 'Dr. Suess', quote: 'Don\'t cry because it\'s over, smile because it happened', superlative: '', photo: 'https://placekitten.com/200/300'},
+    {id: 22, name: 'Oscar Wilde', quote: 'Be yourself; everyone else is already taken', superlative: '', photo: 'https://placekitten.com/200/300'},
+    {id: 23, name: 'Frank Zappa', quote: 'So many books, so little time.', superlative: '', photo: 'https://placekitten.com/200/300'},
     {id: 24, name: 'Danesh', quote: '', superlative: '', photo: 'https://placekitten.com/200/300'},
     {id: 25, name: 'Evelyn', quote: '', superlative: '', photo: 'https://placekitten.com/200/300'},
     {id: 26, name: 'Fatima', quote: '', superlative: '', photo: 'https://placekitten.com/200/300'},
