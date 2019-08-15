@@ -4,7 +4,7 @@ import './Person.css';
 
 const Person = ({id, photo, name, quote, superlative, deletePerson}) => { 
   return (
-    <article key={id}>
+    <article key={id} className="card">
       <img src={photo} alt="yearbook" className="person-photo"></img>
       <h3> {name} </h3>
       <p> {quote} </p>
