@@ -17,15 +17,24 @@ class App extends Component {
     this.setState({students: [...this.state.students, newPerson]})
   }
 
+  deletePerson = (id) => {
+    console.log('inside the delete method')
+    const filteredStaff = this.state.staff.filter(person => person.id !== id)
+    this.setState({ staff: filteredStaff})
+    const filteredStudents = this.state.students.filter(student => student.id !== id)
+    this.setState({ students: filteredStudents})
+  }
+
   render() {
     return (
-      <div className="App">
+      <main className="App">
         <header className="App-header">
           <h1>Turing Yearbook</h1>
         </header>
         <PersonForm addNewPerson={this.addNewPerson}/>
-        <Cohort staff={this.state.staff} students={this.state.students} />
-      </div>
+        <Cohort title="Staff" data={this.state.staff} deletePerson={this.deletePerson} />
+        <Cohort title="Students" data={this.state.students} deletePerson={this.deletePerson}/>
+      </main>
     );
   }
 }
