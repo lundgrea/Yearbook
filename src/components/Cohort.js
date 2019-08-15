@@ -1,30 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Person from './Person';
 import PropTypes from 'prop-types'
 import './Cohort.css';
 
-class Cohort extends Component {
-  constructor() {
-    super();
-    this.state = {}
-  }
 
-  mappedPeople = (type) => {
-    return this.props[type].map(person => {
-      return (<Person person={person} deletePerson={this.props.deletePerson}/>)
-    })
-  }
+const Cohort = ({title, data, deletePerson}) => {
 
-  render() {
-    return (
-      <section className="cohort-container">
-        <h2>staff</h2>
-        {this.mappedPeople('staff')}
-        <h2>students</h2>
-        {this.mappedPeople('students')}
-      </section>
+  const mappedPeople = data.map(person => {
+      console.log(person)
+      return <Person key={person.id} id={person.id} photo={person.photo} name={person.name} quote={person.quote} superlative={person.superlative} deletePerson={deletePerson} />
+   })
+
+  return (
+    <section className="Cohort-container">
+      <h2>{title}</h2>
+      <div className="card">
+        {mappedPeople}
+      </div>
+    </section>
   )
-  }
 
 }
 

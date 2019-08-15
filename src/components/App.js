@@ -27,13 +27,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <main className="App">
         <header className="App-header">
           <h1>Turing Yearbook</h1>
         </header>
         <PersonForm addNewPerson={this.addNewPerson}/>
-        <Cohort staff={this.state.staff} students={this.state.students} deletePerson={this.deletePerson} />
-      </div>
+        <Cohort title="Staff" data={this.state.staff} deletePerson={this.deletePerson} />
+        <Cohort title="Students" data={this.state.students} deletePerson={this.deletePerson}/>
+      </main>
     );
   }
 }
