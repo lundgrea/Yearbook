@@ -13,7 +13,7 @@ const Cohort = ({title, data, deletePerson, updatePerson}) => {
   return (
     <section className="Cohort-container">
       <h2>{title}</h2>
-      <div className="card">
+      <div className="cards">
         {mappedPeople}
       </div>
     </section>
