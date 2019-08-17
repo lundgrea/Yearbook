@@ -9,6 +9,8 @@
   padding: 10px;
   margin: 10px;
   background-color: white;
+  color: darkgrey;
+  border-radius: 10px;
 }
 
 .person-photo{

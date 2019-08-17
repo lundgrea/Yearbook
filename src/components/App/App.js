@@ -33,9 +33,10 @@ class App extends Component {
     return (
       <main className="App">
         <header className="App-header">
-          <h1>Turing Yearbook</h1>
+          <img className="App-header-logo" alt="Turing Logo" height="100px" width="100px" src="https://d682ma8ami8n4.cloudfront.net/images/TuringSchool_LogoMark_Gray.png"/>
+          <h1>TURING YEARBOOK</h1>
+        <PersonForm className="form" addNewPerson={this.addNewPerson}/>
         </header>
-        <PersonForm addNewPerson={this.addNewPerson}/>
         <Cohort title="Staff" data={this.state.staff} deletePerson={this.deletePerson} updatePerson={this.updatePerson} />
         <Cohort title="Students" data={this.state.students} deletePerson={this.deletePerson} updatePerson={this.updatePerson}/>
       </main>
