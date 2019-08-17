@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonForm should match the snapshot with all data passed in correctly 1`] = `
+<form>
+  <h3>
+     Add New Student To The Yearbook
+  </h3>
+  <input
+    name="name"
+    onChange={[Function]}
+    placeholder="Name"
+    type="text"
+    value=""
+  />
+  <input
+    name="quote"
+    onChange={[Function]}
+    placeholder="Quote"
+    type="text"
+    value=""
+  />
+  <input
+    name="superlative"
+    onChange={[Function]}
+    placeholder="Superative"
+    type="text"
+    value=""
+  />
+  <button
+    onClick={[Function]}
+  >
+     Add Person 
+  </button>
+</form>
+`;
