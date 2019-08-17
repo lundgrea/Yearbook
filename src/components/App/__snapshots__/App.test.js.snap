@@ -7,13 +7,21 @@ exports[`App should match the snapshot with all data passed in correctly 1`] = `
   <header
     className="App-header"
   >
+    <img
+      alt="Turing Logo"
+      className="App-header-logo"
+      height="100px"
+      src="https://d682ma8ami8n4.cloudfront.net/images/TuringSchool_LogoMark_Gray.png"
+      width="100px"
+    />
     <h1>
-      Turing Yearbook
+      TURING YEARBOOK
     </h1>
+    <PersonForm
+      addNewPerson={[Function]}
+      className="form"
+    />
   </header>
-  <PersonForm
-    addNewPerson={[Function]}
-  />
   <Cohort
     data={
       Array [
