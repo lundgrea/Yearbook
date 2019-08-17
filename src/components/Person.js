@@ -6,9 +6,9 @@ const Person = ({id, photo, name, quote, superlative, deletePerson, updatePerson
   return (
     <article key={id} className="card">
       <img src={photo} alt="yearbook" className="person-photo"></img>
-      <h3 contentEditable="true" onChange={(event) => updatePerson(event)}> {name} </h3>
-      <p contentEditable="true"> {quote} </p>
-      <h4 contentEditable="true"> {superlative} </h4>
+      <h3 contentEditable="true" suppressContentEditableWarning={true} onChange={(event) => updatePerson(event)}> {name} </h3>
+      <p contentEditable="true" suppressContentEditableWarning={true}> {quote} </p>
+      <h4 contentEditable="true" suppressContentEditableWarning={true}> {superlative} </h4>
      <button onClick={() => deletePerson(id)}>X</button>
     </article>
     )
