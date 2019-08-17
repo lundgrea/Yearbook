@@ -4,8 +4,7 @@ html {
 }
 
 body {
-  /* background: url('https://ak9.picdn.net/shutterstock/videos/1007204479/thumb/1.jpg'); */
-  background-color: #11F2FC;
+  background-color:#026475;;
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -21,7 +20,18 @@ body {
 }
 
 h1 {
-  /* background-color: rgba(255, 255, 255, 0.95); */
   padding: 10px;
-  color:#026475;
+  color: #51CFDE;
+  font-family: helvetica neue heavy;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: -4px;
+}
+
+.App-header{
+  display: flex
+}
+
+.App-header-logo{
+  margin: 50px 5px 50px 50px;
 }
