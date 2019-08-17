@@ -1,5 +1,5 @@
 import React from 'react';
-import Person from './Person';
+import Person from '../Person/Person';
 import PropTypes from 'prop-types'
 import './Cohort.css';
 
@@ -13,7 +13,7 @@ const Cohort = ({title, data, deletePerson, updatePerson}) => {
   return (
     <section className="Cohort-container">
       <h2>{title}</h2>
-      <div className="card">
+      <div className="cards">
         {mappedPeople}
       </div>
     </section>

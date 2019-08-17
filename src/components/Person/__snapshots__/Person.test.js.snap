@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person should match the snapshot with all data passed in correctly 1`] = `
+<article
+  className="card"
+  id={1}
+  key="1"
+>
+  <img
+    alt="yearbook"
+    className="person-photo"
+    src="./eric.jpg"
+  />
+  <h3
+    contentEditable="true"
+    onChange={[Function]}
+    suppressContentEditableWarning={true}
+  >
+     
+    Eric
+     
+  </h3>
+  <p
+    contentEditable="true"
+    suppressContentEditableWarning={true}
+  >
+     
+    You miss all the shots you don\\'t take.
+     
+  </p>
+  <h4
+    contentEditable="true"
+    suppressContentEditableWarning={true}
+  >
+     
+    Most Likely to Win the PGA
+     
+  </h4>
+  <button
+    className="delete-button"
+    onClick={[Function]}
+  >
+    X
+  </button>
+</article>
+`;
