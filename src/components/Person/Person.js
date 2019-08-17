@@ -9,7 +9,7 @@ const Person = ({id, photo, name, quote, superlative, deletePerson, updatePerson
       <h3 contentEditable="true" suppressContentEditableWarning={true} onChange={(event) => updatePerson(event)}> {name} </h3>
       <p contentEditable="true" suppressContentEditableWarning={true}> {quote} </p>
       <h4 contentEditable="true" suppressContentEditableWarning={true}> {superlative} </h4>
-     <button onClick={() => deletePerson(id)}>X</button>
+     <button className="delete-button" onClick={() => deletePerson(id)}>X</button>
     </article>
     )
 }

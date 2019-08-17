@@ -37,6 +37,7 @@ exports[`Person should match the snapshot with all data passed in correctly 1`] 
      
   </h4>
   <button
+    className="delete-button"
     onClick={[Function]}
   >
     X
