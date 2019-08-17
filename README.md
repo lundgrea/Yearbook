@@ -1,6 +1,6 @@
 # Turing Yearbook
 
-This application was built with `create-react-app`.
+ This project was developed using React (`create-react-app`) over the course of a one week agile sprint. The application is fully tested using Jest and Enzyme and was built as an individual project. Additional students can be added to the Yearbook using the form included within the header. All content within the cards are editable. 
 
 ### Set Up
 
@@ -17,5 +17,5 @@ All Components have been tested using various unit testing techniques including 
 
 ### Screenshots
 
-![turing yearbook screenshot](https://raw.githubusercontent.com/turingschool-examples/yearbook/master/screenshot.png)
-![turing yearbook screenshot](https://raw.githubusercontent.com/turingschool-examples/yearbook/master/screenshot.png)
+![turing yearbook screenshot](./screenshot.png)
+
