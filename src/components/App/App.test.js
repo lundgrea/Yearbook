@@ -10,7 +10,6 @@ describe('App', () => {
   })
 
   it('should update state with a new person when addNewPerson is called', () => {
-    // Setup
     const wrapper = shallow(<App />);
     const mockPerson = { 
       id: 1, 
@@ -19,15 +18,7 @@ describe('App', () => {
       superlative: 'Most Likely to Win the PGA', 
       photo: './eric.jpg'
      };
-     const expected = [mockPerson]
-
-    // Expectation
-    // expect(wrapper.state('staff')).toEqual([]);
-
-    // Execution
     wrapper.instance().addNewPerson(mockPerson);
-
-    // Expectation
     expect(wrapper.state('staff')).toHaveLength(13)
   })
 })

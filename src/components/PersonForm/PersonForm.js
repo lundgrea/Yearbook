@@ -34,6 +34,7 @@ class PersonForm extends Component {
           name="name"
           value={this.state.name}
           onChange={event => this.handleFormUpdate(event)}
+          className="input-name"
         />
          <input
           type="text"
@@ -41,6 +42,7 @@ class PersonForm extends Component {
           name="quote"
           value={this.state.quote}
           onChange={event => this.handleFormUpdate(event)}
+          className="input-quote"
         />
         <input
           type="text"
@@ -48,6 +50,8 @@ class PersonForm extends Component {
           name="superlative"
           value={this.state.superlative}
           onChange={event => this.handleFormUpdate(event)}
+          className="input-superlative"
+
         />
         <button onClick={event => this.submitPerson(event)}> Add Person </button>
       </form>
