@@ -30,6 +30,7 @@ exports[`PersonForm should match the snapshot with all data passed in correctly 
     value=""
   />
   <button
+    className="add-button"
     onClick={[Function]}
   >
      Add Person 
