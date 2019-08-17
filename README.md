@@ -17,5 +17,5 @@ All Components have been tested using various unit testing techniques including 
 
 ### Screenshots
 
-![turing yearbook screenshot](https://raw.githubusercontent.com/turingschool-examples/yearbook/master/screenshot.png)
-![turing yearbook screenshot](https://raw.githubusercontent.com/turingschool-examples/yearbook/master/screenshot.png)
+![turing yearbook screenshot](./screenshot.png)
+
