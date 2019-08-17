@@ -1,5 +1,5 @@
 import React from 'react';
-import Person from './Person';
+import Person from '../Person/Person';
 import PropTypes from 'prop-types'
 import './Cohort.css';
 
