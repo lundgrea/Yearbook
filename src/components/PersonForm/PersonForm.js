@@ -53,7 +53,7 @@ class PersonForm extends Component {
           className="input-superlative"
 
         />
-        <button onClick={event => this.submitPerson(event)}> Add Person </button>
+        <button className="add-button" onClick={event => this.submitPerson(event)}> Add Person </button>
       </form>
     )
   }

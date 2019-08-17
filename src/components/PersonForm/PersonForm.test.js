@@ -20,12 +20,4 @@ describe('PersonForm', () => {
     input.simulate('change', { target: { value: 'George', name: 'name' } })
     expect(wrapper.state('name')).toEqual('George');
   })
-
-
-
-
-
-  it('should fire the submitPerson method on the click of the submit button' , () => {
-
-  })
 })
